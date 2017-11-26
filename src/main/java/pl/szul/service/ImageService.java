@@ -71,7 +71,6 @@ public class ImageService {
     private byte[] toByteArray(BufferedImage img,Action action,String name) {
         try {
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
-
             ImageIO.write(img, "jpg", baos);
 
             baos.flush();
